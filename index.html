@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Basketball Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main" aria-label="Basketball Scoreboard">
+      <div class="home">
+        <p>Home</p>
+        <span class="point" 
+              id="home-point" 
+              aria-label="Home team point">
+        </span>
+        <div class="point-btn-container">
+          <button class="point-btn" 
+                  id="home-plus-one-point"
+                  onclick="homePlusOnePoint()">+1
+          </button>
+          <button class="point-btn" 
+                  id="home-plus-two-points"
+                  onclick="homePlusTwoPoints()">+2
+          </button>
+          <button class="point-btn" 
+                  id="home-plus-three-points"
+                  onclick="homePlusThreePoints()">+3
+          </button>
+        </div>
+      </div>
+      <div class="guest">
+        <p>Guest</p>
+        <span class="point" 
+              id="guest-point" 
+              aria-label="Away team point">
+        </span>
+        <div class="point-btn-container">
+          <button class="point-btn" 
+                  id="guest-plus-one-point"
+                  onclick="guestPlusOnePoint()">+1
+          </button>
+          <button class="point-btn" 
+                  id="guest-plus-two-points"
+                  onclick="guestPlusTwoPoints()">+2
+          </button>
+          <button class="point-btn" 
+                  id="guest-plus-three-points"
+                  onclick="guestPlusThreePoints()">+3
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
+
